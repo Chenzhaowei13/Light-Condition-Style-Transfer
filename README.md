@@ -17,7 +17,7 @@ We will open the source code for Better-CycleGAN soon.
 
 2. ERFNet
 
-The source code used for the lane detction is made publicly available by [HOU Yuenan](https://github.com/cardwing/Codes-for-Lane-Detection)
+The source code used for the lane detction is made publicly available by [HOU Yuenan](https://github.com/cardwing/Codes-for-Lane-Detection/tree/master/ERFNet-CULane-PyTorch)
 
 ## Datasets
 
