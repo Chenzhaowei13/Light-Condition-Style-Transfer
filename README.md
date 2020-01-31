@@ -6,7 +6,6 @@ Lane Detection in Low-light Conditions Using an Efficient Data Enhancement : Lig
 Submit : IV 2020
 
 The main framework is as follows:
-
 ![Our framework](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/tree/master/data/framework.png)
 
 ## Source Code
@@ -40,7 +39,6 @@ The trained models used in this paper are available in ./trained
 1. Light-Conditions transfer
 
 Some examples of real images in normal light conditions and their corresponding translations images in low-light conditions.
-
 ![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/tree/master/data/transfer_results.png)
 
 
@@ -62,7 +60,6 @@ Performance ( (F<sub>1</sub>-measure) ) of different methods on CULane testing s
 | Total | 73.1 | 73.6 | 73.9 | 71.6 | 70.8 | 71.8 |
 
 The probability maps output by the three methods above are shown as following
-
 ![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/tree/master/data/lane_detection_results.png)
 
 
