@@ -39,7 +39,7 @@ The trained models used in this paper are available in ./trained
 1. Light-Conditions transfer
 
 Some examples of real images in normal light conditions and their corresponding translations images in low-light conditions.
-![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/transfer_results.png)
+![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/transfer_result.png)
 
 
 2. Lane detetcion
