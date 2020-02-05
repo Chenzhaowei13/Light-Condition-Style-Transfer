@@ -1,20 +1,20 @@
 # Light Conditions Style Transfer
 
 ## Paper
-Lane Detection in Low-light Conditions Using an Efficient Data Enhancement : Light Conditions Style Transfer
+[Lane Detection in Low-light Conditions Using an Efficient Data Enhancement : Light Conditions Style Transfer](https://arxiv.org/abs/2002.01177)
 
-Submit : IV 2020
+submitted to IV 2020
 
 The main framework is as follows:
 ![Our framework](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/framework.png)
 
 ## Source Code
 
-1. Better-CycleGAN
+### Better-CycleGAN
 
 We will open the source code for Better-CycleGAN soon.
 
-2. ERFNet
+### ERFNet
 
 The source code used for the lane detction is made publicly available by [HOU Yuenan](https://github.com/cardwing/Codes-for-Lane-Detection/tree/master/ERFNet-CULane-PyTorch)
 
@@ -36,13 +36,13 @@ The trained models used in this paper are available in ./trained
 
 ## Performance
 
-1. Light-Conditions transfer
+### Light-Conditions transfer
 
 Some examples of real images in normal light conditions and their corresponding translations images in low-light conditions.
 ![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/transfer_result.png)
 
 
-2. Lane detetcion
+### Lane detetcion
 
 Performance ( (F<sub>1</sub>-measure) ) of different methods on CULane testing set. For crossroad, only FP is shown.
 
