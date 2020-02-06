@@ -83,7 +83,7 @@ Performance ( (F<sub>1</sub>-measure) ) of different methods on CULane testing s
 
 | Category | ERFNet | CycleGAN+ERFNet | Better-CycleGAN+ERFNet(ours) | SCNN | ENet-SAD | ResNet-101-SAD |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| Normal | 91.5 | 91.7 | *91.8* | 90.6 | 90.1 | 90.7 |
+| Normal | 91.5 | 91.7 | **91.8** | 90.6 | 90.1 | 90.7 |
 | Crowded | 71.6 | 71.5 | 71.8 | 69.7 | 68.8 | 70.0 |
 | Night | 67.1 | 68.9 | 69.4 | 66.1 | 66.0 | 66.3 |
 | No Line | 45.1 | 45.2 | 46.1 | 43.4 | 41.6 | 43.5 |
