@@ -1,0 +1,6 @@
+file: ./output/out2_hlight.txt
+tp: 1086 fp: 498 fn: 599
+precision: 0.685606
+recall: 0.64451
+Fmeasure: 0.664423
+

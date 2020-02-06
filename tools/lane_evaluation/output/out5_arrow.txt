@@ -1,0 +1,6 @@
+file: ./output/out5_arrow.txt
+tp: 2751 fp: 337 fn: 431
+precision: 0.890868
+recall: 0.864551
+Fmeasure: 0.877512
+

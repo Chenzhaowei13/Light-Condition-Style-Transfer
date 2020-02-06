@@ -1,0 +1,6 @@
+file: ./output/vgg_SCNN_DULR_w9_iou0.5.txt
+tp: 77540 fp: 27317 fn: 27346
+precision: 0.739483
+recall: 0.739279
+Fmeasure: 0.739381
+
