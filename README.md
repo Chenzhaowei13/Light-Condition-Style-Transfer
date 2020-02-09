@@ -79,13 +79,13 @@ Run.sh evaluate each scenario separately while run.sh evaluate the whole. The ev
 
 ## Performance
 
-#### Light-Conditions transfer
+#### Light Conditions Stlye Transfer
 
 Some examples of real images in normal light conditions and their corresponding translations images in low-light conditions.
 ![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/transfer_result.png)
 
 
-#### Lane detetcion
+#### Lane Detetcion
 
 Performance ( (F<sub>1</sub>-measure) ) of different methods on CULane testing set. For crossroad, only FP is shown.
 
