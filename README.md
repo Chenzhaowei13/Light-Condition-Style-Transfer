@@ -8,6 +8,7 @@ Submitted to IV 2020
 The main framework is as follows:
 ![Our framework](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/framework.png)
 
+Empirically, lane detection model trained using our method demonstrated adaptability in low-light conditions and robustness in complex scenarios. (It can achieve **73.9** F1-measure in CULane testing set)
 
 ## Datasets
 
@@ -16,9 +17,9 @@ The main framework is as follows:
 The whole dataset is available at [CULane](https://xingangpan.github.io/projects/CULane.html).
 ```
 CULane
-├── driver_23_30frame       # trainning&validation
-├── driver_161_90frame      # trainning&validation
-├── driver_182_30frame      # trainning&validation
+├── driver_23_30frame       # training&validation
+├── driver_161_90frame      # training&validation
+├── driver_182_30frame      # training&validation
 ├── driver_193_90frame      # testing
 ├── driver_100_30frame      # testing
 ├── driver_37_30frame       # testing
@@ -43,16 +44,16 @@ The source code used for the lane detction is made publicly available by [HOU Yu
 
 ## Requirements
 
-- PyTorch 0.3.0.
+- [PyTorch 0.3.0](https://pytorch.org/get-started/previous-versions/).
 
-- Matlab (for tools/prob2lines), version R2014a or later.
+- Matlab (for tools/prob2lines), version R2017a or later.
 
-- Opencv (for tools/lane_evaluation), version 2.4.8 (later 2.4.x should also work).
+- [Opencv](https://opencv.org/releases/) (for tools/lane_evaluation), version 2.4.8 or later.
 
 
 ## Test
 
-The trained model used in this paper is available in ./trained. (It can achieve **73.9** F1-measure in CULane testing set)
+The trained model used in this paper is available in ./trained.
 
 1. Run test script
 ```
