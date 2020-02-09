@@ -24,7 +24,6 @@ CULane
 ├── driver_100_30frame      # testing
 ├── driver_37_30frame       # testing
 ├── laneseg_label_w16       # labels
-├── laneseg_label_w16_test  # labels
 └── list                    # list
 ```
 
