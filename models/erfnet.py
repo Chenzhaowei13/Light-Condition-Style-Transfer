@@ -100,7 +100,7 @@ class UpsamplerBlock (nn.Module):
     def __init__(self, ninput, noutput):
         super().__init__()
         self.conv = nn.ConvTranspose2d(ninput, noutput, 3, stride=2, padding=1, output_padding=1, bias=True)
-        self.bn = nn.BatchNorm2d(noutput, eps=1e-3)
+        self.bn = nn.BatchNorm2d(noutput, eps=1e-3, track_running_stats=True)
 
     def forward(self, input):
         output = self.conv(input)
@@ -179,7 +179,7 @@ class Lane_exist (nn.Module):
         return output
 
 class ERFNet(nn.Module):
-    def __init__(self, num_classes, partial_bn=False, encoder=None):  #use encoder to pass pretrained encoder
+    def __init__(self, num_classes, encoder=None):  #use encoder to pass pretrained encoder
         super().__init__()
 
         if (encoder == None):
@@ -190,10 +190,7 @@ class ERFNet(nn.Module):
         self.lane_exist = Lane_exist(4) # num_output
         self.input_mean = [103.939, 116.779, 123.68] # [0, 0, 0]
         self.input_std = [1, 1, 1]
-        self._enable_pbn = partial_bn
 
-        if partial_bn:
-            self.partialBN(True)
 
     def train(self, mode=True):
         """
@@ -201,17 +198,7 @@ class ERFNet(nn.Module):
         :return:
         """
         super(ERFNet, self).train(mode)
-        if self._enable_pbn:
-            print("Freezing BatchNorm2D.")
-            for m in self.modules():
-                if isinstance(m, nn.BatchNorm2d):
-                    m.eval()
-                    # shutdown update in frozen mode
-                    m.weight.requires_grad = False
-                    m.bias.requires_grad = False
 
-    def partialBN(self, enable):
-        self._enable_pbn = enable
 
     def get_optim_policies(self):
         base_weight = []

@@ -6,7 +6,7 @@ from torch.utils.data import Dataset
 
 
 class VOCAugDataSet(Dataset):
-    def __init__(self, dataset_path='/../../ERFNet-CULane-Pytorh/list', data_list='train', transform=None):
+    def __init__(self, dataset_path='/home/chenzhaowei/data/CULane/list', data_list='train', transform=None):
 
         with open(os.path.join(dataset_path, data_list + '.txt')) as f:
             self.img_list = []
