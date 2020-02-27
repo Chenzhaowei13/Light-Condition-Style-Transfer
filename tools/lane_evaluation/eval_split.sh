@@ -1,7 +1,9 @@
-root=/path/to/your/root/
-data_dir=${root}ERFNet-CULane-Pytorh/
-exp=vgg_SCNN_DULR_w9
-detect_dir=${root}ERFNet-CULane-Pytorh/tools/prob2lines/output/${exp}/
+# root=/path/to/your/root/
+root=/home/chenzhaowei/Project/Light-Condition-Style-Transfer/
+# data_dir=/path/to/your/data/
+data_dir=/home/chenzhaowei/data/CULane/
+exp=ERFNet
+detect_dir=${root}/tools/prob2lines/output/${exp}/
 w_lane=30;
 iou=0.5;  # Set iou to 0.3 or 0.5
 im_w=1640
