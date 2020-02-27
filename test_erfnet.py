@@ -10,6 +10,7 @@ import cv2
 import utils.transforms as tf
 import numpy as np
 import models
+#from models import sync_bn
 import dataset as ds
 from options.options import parser
 import torch.nn.functional as F
@@ -111,14 +112,14 @@ def validate(val_loader, model, criterion, iter, evaluator, logger=None):
         pred_exist = output_exist.data.cpu().numpy() # BxO
 
         for cnt in range(len(img_name)):
-            directory = 'predicts/vgg_SCNN_DULR_w9' + img_name[cnt][:-10]
+            directory = 'predicts/ERFNet' + img_name[cnt][:-10]
             if not os.path.exists(directory):
                 os.makedirs(directory)
-            file_exist = open('predicts/vgg_SCNN_DULR_w9'+img_name[cnt].replace('.jpg', '.exist.txt'), 'w')
+            file_exist = open('predicts/ERFNet'+img_name[cnt].replace('.jpg', '.exist.txt'), 'w')
             for num in range(4):
                 prob_map = (pred[cnt][num+1]*255).astype(int)
                 save_img = cv2.blur(prob_map,(9,9))
-                cv2.imwrite('predicts/vgg_SCNN_DULR_w9'+img_name[cnt].replace('.jpg', '_'+str(num+1)+'_avg.png'), save_img)
+                cv2.imwrite('predicts/ERFNet'+img_name[cnt].replace('.jpg', '_'+str(num+1)+'_avg.png'), save_img)
                 if pred_exist[cnt][num] > 0.5:
                     file_exist.write('1 ')
                 else:
