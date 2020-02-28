@@ -43,12 +43,19 @@ The source code used for the lane detction is made publicly available by [HOU Yu
 
 ## Requirements
 
-- [PyTorch 0.3.0](https://pytorch.org/get-started/previous-versions/).
+- [PyTorch 1.3.0](https://pytorch.org/get-started/previous-versions/).
 
 - Matlab (for tools/prob2lines), version R2017a or later.
 
-- [Opencv](https://opencv.org/releases/) (for tools/lane_evaluation), version 2.4.8 or later.
+- [Opencv](https://opencv.org/releases/) (for tools/lane_evaluation).
 
+## Before start
+```
+conda create -n  your_env_name python=3.6
+conda activate your_env_name
+conda install pytorch==1.3.0 torchvision==0.4.1 cudatoolkit=10.0 -c pytorch
+pip install -r requirements.txt 
+```
 
 ## Test
 
@@ -72,9 +79,10 @@ Please check the file path in Matlab code before.
 ```
 cd /tools/lane_evaluation
 make
-sh Run.sh # run.sh
-```
-Run.sh evaluate each scenario separately while run.sh evaluate the whole. The evaluation results are saved in /tools/lane_evaluation/output
+sh eval_all.sh    # evaluate the whole test set
+sh eval_split.sh  # evaluate each scenario separately
+ ```
+The evaluation results are saved in /tools/lane_evaluation/output.
 
 ## Performance
 
@@ -107,9 +115,11 @@ The probability maps output by the three methods above are shown as following
 
 ## To do
 
-- Upload the generated images
+- [ ] Upload the generated images
 
-- Open the source code for Better-CycleGAN
+- [ ] Open the source code for Better-CycleGAN
+
+- [x] Upgade pytorch (from 0.3.0 to 1.3.0)
 
 ## Acknowledgement
 
