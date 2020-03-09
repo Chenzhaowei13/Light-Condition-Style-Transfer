@@ -59,6 +59,25 @@ pip install -r requirements.txt
 
 ## Test
 
+#### Test for Demo
+
+We provide demo for testing a single image or a video. 
+```
+sh ./demo.sh
+```
+You can get the results as follow.
+
+Result for probability map
+![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/result_pb.jpg)
+
+Result for points
+![images](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/result_points.jpg)
+
+If you want to test the model for video, you can set mode=0 in demo.sh. 
+
+
+#### Evaluate the Model
+
 The trained model used in this paper is available in ./trained.
 
 1. Run test script
@@ -120,6 +139,8 @@ The probability maps output by the three methods above are shown as following
 - [ ] Open the source code for Better-CycleGAN
 
 - [x] Upgade pytorch (from 0.3.0 to 1.3.0)
+
+- [x] Upload demo for test
 
 ## Acknowledgement
 
