@@ -35,3 +35,6 @@ parser.add_argument('-e', '--evaluate', dest='evaluate', action='store_true', he
 parser.add_argument('--snapshot_pref', type=str, default="")
 parser.add_argument('--start-epoch', default=0, type=int, metavar='N', help='manual epoch number (useful on restarts)')
 parser.add_argument('--gpus', nargs='+', type=int, default=None)
+
+# =========================  Mode for Demo ===========================
+parser.add_argument('--mode', default=0, type=int, metavar='N', help='mode for demo')
