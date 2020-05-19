@@ -135,6 +135,18 @@ The probability maps output by the three methods above are shown as following
 
 - [x] Upload demo for test
 
+## Citation
+
+Please cite this in your publication if our work helps your research.
+```
+@inproceedings{Liu2020Lane,
+  title={Lane Detection in Low-light Conditions Using an Efficient Data Enhancement : Light Conditions Style Transfer},
+  author={Liu, Tong and Chen, Zhaowei and Yang, Yi and Wu, Zehao and Li, Haowei},
+  booktitle={2020 IEEE intelligent vehicles symposium (IV)},
+  year={2020},
+}
+```
+
 
 ## Acknowledgement
 
