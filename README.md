@@ -3,7 +3,7 @@
 ## Paper
 [Lane Detection in Low-light Conditions Using an Efficient Data Enhancement : Light Conditions Style Transfer](https://arxiv.org/abs/2002.01177)
 
-Submitted to IV 2020
+Accepted by 2020 IEEE Intelligent Vehicles Symposium (IV 2020).
 
 The main framework is as follows:
 ![Our framework](https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer/blob/master/data/framework.png)
