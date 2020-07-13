@@ -93,6 +93,8 @@ Please check the file path in Matlab code before.
 ```
 cd /tools/lane_evaluation
 make
+# You may also use cmake instead of make, via:
+# mkdir build && cd build && cmake ..
 sh eval_all.sh    # evaluate the whole test set
 sh eval_split.sh  # evaluate each scenario separately
  ```
